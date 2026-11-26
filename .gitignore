@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Runtime data and uploaded evidence
+storage/
+uploads/
+
+# Temporary frontend projects
+frontend_1/
+frontend_new/

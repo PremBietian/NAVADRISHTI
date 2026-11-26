@@ -1,0 +1,6 @@
+{
+  "name": "CERBERUS-X",
+  "description": "CERBERUS-X is an evidence intelligence platform that connects information from multiple sources, extracts entities and claims, discovers relationships, detects contradictions and protects digital evidence integrity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

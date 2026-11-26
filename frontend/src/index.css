@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+@layer base {
+  :root {
+    --bg-main: #070908;
+    --bg-secondary: #0D110F;
+    --bg-card: #121916;
+    --bg-elevated: #18211C;
+    --accent-primary: #A6FF78;
+    --accent-emerald: #34D399;
+    --accent-blue: #60A5FA;
+    --text-primary: #F5F7F5;
+    --text-secondary: #9AA69E;
+    --border-subtle: #222E27;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #070908;
+    color: #F5F7F5;
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: #070908;
+    color: #F5F7F5;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070908;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222E27;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #304237;
+}
+
+/* React Flow Dark Theme Overrides */
+.react-flow__controls {
+  background: #121916 !important;
+  border: 1px solid #222E27 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: #121916 !important;
+  border-bottom: 1px solid #222E27 !important;
+  fill: #9AA69E !important;
+  color: #9AA69E !important;
+  transition: background-color 150ms ease, fill 150ms ease;
+}
+
+.react-flow__controls-button:hover {
+  background: #18211C !important;
+  fill: #A6FF78 !important;
+}
+
+.react-flow__controls-button:last-child {
+  border-bottom: none !important;
+}
+
+.react-flow__minimap {
+  background: #0D110F !important;
+  border: 1px solid #222E27 !important;
+  border-radius: 8px !important;
+}
+
+.react-flow__attribution {
+  background: rgba(13, 17, 15, 0.75) !important;
+  color: #6E7B73 !important;
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+}
